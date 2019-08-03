@@ -3,7 +3,7 @@ const path = require('path')
 const webpack = require('webpack')
 const CompressionPlugin = require('compression-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-process.env.NODE_ENV = 'production'
+process.env.NODE_ENV = 'development'
 
 module.exports = [
   {
@@ -24,7 +24,7 @@ module.exports = [
       }),
       new CompressionPlugin()
     ],
-    // devtool: 'source-map',
+    devtool: 'source-map',
     optimization: {
       splitChunks: {
         cacheGroups: {

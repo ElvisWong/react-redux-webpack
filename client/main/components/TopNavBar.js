@@ -4,7 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar/Toolbar'
 import withStyles from '@material-ui/core/styles/withStyles'
 import { connect } from 'react-redux'
 import withRouter from 'react-router-dom/withRouter'
-import TopNavBarTitle from './TopNavBarTitle'
+// import TopNavBarTitle from './TopNavBarTitle'
 
 const styles = theme => ({
   titleContainer: {
@@ -21,7 +21,6 @@ class TopNavBar extends Component {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <div className={classes.titleContainer}>
-            <TopNavBarTitle />
           </div>
         </Toolbar>
       </AppBar>

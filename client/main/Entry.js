@@ -40,7 +40,7 @@ class Entry extends Component {
   constructor (props) {
     super(props)
     this.props.setLocale()
-    this.props.loadAppUser()
+    // this.props.loadAppUser()
   }
 
   render () {
